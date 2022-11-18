@@ -1,0 +1,21 @@
+/*RESET*/
+:root{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.6rem;
+}
+/*COLORS*/
+:root{
+    --clr-purple:#4B145B;
+    --clr-gray:#102a42;
+    --clr-white:#fff;
+    --clr-grey-special:#eae6eb
+
+
+}
