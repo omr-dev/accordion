@@ -12,10 +12,13 @@ body{
 }
 /*COLORS*/
 :root{
-    --clr-purple:#4B145B;
-    --clr-gray:#102a42;
+    --clr-debian-red:#DC094E;
+    --clr-mirage:#141225;
     --clr-white:#fff;
-    --clr-grey-special:#eae6eb
+    --clr-lavender-pinocchio:#E5DDE7;
+    --clr-mercury:#E6E6E6;
+    --clr-rich-maroon:#B6325D;
+    --clr-grape-purple:#4F1559;
 
 
 }
