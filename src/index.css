@@ -1,0 +1,25 @@
+@import 'normalize.css';
+/*RESET*/
+:root{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.6rem;
+}
+/*COLORS*/
+:root{
+    --clr-debian-red:#DC094E;
+    --clr-mirage:#141225;
+    --clr-white:#fff;
+    --clr-lavender-pinocchio:#E5DDE7;
+    --clr-mercury:#E6E6E6;
+    --clr-rich-maroon:#B6325D;
+    --clr-grape-purple:#4F1559;
+
+
+}
