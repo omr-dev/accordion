@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
 
-body{
+body {
     background-color: var(--clr-grape-purple);
     font-family: "Mulish", sans-serif;
 
 }
-.App{
+
+.App {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,90 +15,100 @@ body{
 
 
 }
-.container{
-    background-color: var(--clr-grape-purple);
-    padding: 8.1rem;
 
-    width: 1218px;
-    height: 863px;
-    margin: auto;
+.container {
+
     position: relative;
+    width: 80vw;
+
+
 }
-.container .up-left-box{
-    width: 206px;
-    height: 206px;
-    background-color:var(--clr-rich-maroon);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.container .down-right-boxes{
-    width: 206px;
-    height: 206px;
-    background-color: var(--clr-rich-maroon);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.container .down-right-boxes .down-right-purple-inner-box{
-    width: 170px;
-    height: 170px;
-    background-color: var(--clr-grape-purple);
-}
-.container .main-box {
+
+.main-box {
     background-color: var(--clr-white);
-    height: 709px;
-    width: 1059px;
-    position: absolute;
-    top:81px;
+    position: center;
+    margin: 8.1rem 7.8rem 7.3rem 8.1rem;
     border-radius: 10px;
     padding: 70px;
     display: flex;
     gap: 7.5rem;
 
 
-
 }
-.main-box .main-box-title{
 
-    flex-grow: 3;
+.up-left-box {
+    width: 20.6rem;
+    height: 20.6rem;
+    background-color: var(--clr-rich-maroon);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
-.main-box .main-box-title h1{
+
+.down-right-boxes {
+    width: 20.6rem;
+    height: 20.6rem;
+    background-color: var(--clr-rich-maroon);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.down-right-boxes .down-right-purple-inner-box {
+    width: 17rem;
+    height: 17rem;
+    background-color: var(--clr-grape-purple);
+}
+
+.main-box .main-box-title {
+
+    flex-basis: 35%;
+}
+
+.main-box .main-box-title h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 3.6rem;
-    line-height: 40px;
+    line-height: 4rem;
 }
+
 .main-box .main-box-questions {
-    flex-grow: 5;
+    flex-basis: 65%;
 
 
 }
-.questions-box-inner{
+
+.questions-box-inner {
     display: flex;
     padding: 2.5rem;
 }
-.main-box .main-box-questions .questions-box-inner .left-side{
+
+.main-box .main-box-questions .questions-box-inner .left-side {
     flex-grow: 1;
 }
-.main-box .main-box-questions .questions-box-inner .left-side h4{
+
+.main-box .main-box-questions .questions-box-inner .left-side h4 {
     font-weight: 700;
     font-size: 1.8rem;
     line-height: 2.3rem;
 }
-.main-box .main-box-questions .questions-box-inner .left-side p{
+
+.main-box .main-box-questions .questions-box-inner .left-side p {
     font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 2.2rem;
     padding: .6rem 0;
 }
-.main-box .main-box-questions .questions-box-inner .right-side{
+
+.main-box .main-box-questions .questions-box-inner .right-side {
 
     min-width: 4rem;
     height: 4rem;
-    background-color:#e5dde7;
-    color:#dc094e ;
+    background-color: #e5dde7;
+    color: #dc094e;
     font-size: 3rem;
     text-align: center;
     border-radius: 50%;
