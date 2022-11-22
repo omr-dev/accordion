@@ -2,15 +2,15 @@ import './App.css';
 import questions from './data';
 import QuestionBox from './components/QuestionBox';
 import {useEffect, useState} from 'react';
-
+type TypeOpenQuestions={[id:number]:boolean};
 function App() {
     const [openQuestions,setOpenQuestion]=useState({});
     useEffect(()=>{
-        let initialStatus;
+        const initialStatus:TypeOpenQuestions={};
         questions.map((q)=>{
             initialStatus[q.id]=false;
         })
-       if(initialStatus) setOpenQuestion(initialStatus);
+        setOpenQuestion(initialStatus);
 
     },[])
 
