@@ -1,6 +1,18 @@
 import './App.css';
+import questions from './data';
+import QuestionBox from './components/QuestionBox';
+import {useEffect, useState} from 'react';
 
 function App() {
+    const [openQuestions,setOpenQuestion]=useState({});
+    useEffect(()=>{
+        let initialStatus;
+        questions.map((q)=>{
+            initialStatus[q.id]=false;
+        })
+       if(initialStatus) setOpenQuestion(initialStatus);
+
+    },[])
 
     return (
         <div className="App">
@@ -14,31 +26,12 @@ function App() {
                         <h1>Questions and answers about login</h1>
                     </div>
                     <div className="main-box-questions">
-                        <div className="questions-box-inner">
-                            <div className="left-side">
-                                <h4>Do I have to allow the use of cookies?</h4>
-                                <p>Unicorn vinyl poutine brooklyn,
-                                    next level direct trade iceland.
-                                    Shaman copper mug church-key coloring book,
-                                    whatever poutine normcore fixie cred kickstarter
-                                    post-ironic street art.</p>
-                            </div>
-                            <div className="right-side">-</div>
-                        </div>
-                        <div className="questions-box-inner">
-                            <div className="left-side">
-                                <h4>How do I change my My Page Password?</h4>
+                        {questions.map((q,key)=>{
+                            return <QuestionBox key={key} question={q} setOpenQuestions={setOpenQuestion} openQuestions={openQuestions}/>
+                        })}
+                    </div>
 
-                            </div>
-                            <div className="right-side">+</div>
-                        </div>
-                        <div className="questions-box-inner">
-                            <div className="left-side">
-                                <h4> What is BankID?</h4>
 
-                            </div>
-                            <div className="right-side">+</div>
-                        </div>
 
 
 
@@ -48,7 +41,7 @@ function App() {
 
 
             </div>
-        </div>
+
     );
 }
 
